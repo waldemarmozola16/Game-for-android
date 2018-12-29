@@ -6,14 +6,14 @@ import android.view.SurfaceHolder;
 
 public abstract class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
-    public GameView(Context context){
+    public GameView(Context context) {
         super(context);
 
         getHolder().addCallback(this);
     }
 
     @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height){
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
 
     }
@@ -22,4 +22,14 @@ public abstract class GameView extends SurfaceView implements SurfaceHolder.Call
     public void surfaceCreated(SurfaceHolder holder) {
 
     }
-}
+
+
+
+    @Override
+    public void surfaceDestroyed (SurfaceHolder holder){
+
+    }
+
+
+    }
+
