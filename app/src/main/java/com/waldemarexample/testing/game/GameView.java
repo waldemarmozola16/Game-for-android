@@ -19,5 +19,7 @@ public abstract class GameView extends SurfaceView implements SurfaceHolder.Call
     }
 
     @Override
-    public void
+    public void surfaceCreated(SurfaceHolder holder) {
+
+    }
 }
